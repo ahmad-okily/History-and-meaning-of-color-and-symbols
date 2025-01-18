@@ -281,8 +281,9 @@ nav {
   display: flex;
   gap: 10px;
   margin-bottom: 5px;
-  margin-left: 5px;
+  margin-left: 35px;
   margin-right: 5px;
+
 }
 .flags_text {
   display: flex;
@@ -305,6 +306,7 @@ nav {
 }
 #text-and-vedio p {
   font-size: 20px;
+  margin-left:35px;
 }
 .flags-section {
   background-color: #fff;
@@ -537,6 +539,9 @@ footer a:hover {
     width: 80px;
     height: auto;
   }
+  .navbar-toggler{
+    justify-content: end !important;
+  }
 }
 @media (max-width: 767px) {
   .hero {
@@ -571,6 +576,9 @@ footer a:hover {
   .arabic-flags-section .flags-grid img {
     width: 70px;
   }
+  .navbar-toggler{
+    justify-content: end !important;
+  }
 }
 
 @media (max-width: 479px) {
@@ -602,6 +610,9 @@ footer a:hover {
   .arabic-flags-section .flags-grid img {
     width: 60px;
   }
+  .navbar-toggler{
+    justify-content: end !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -614,6 +625,9 @@ footer a:hover {
   .card {
     width: 120px; 
     height: 80px;
+  }
+  .navbar-toggler{
+    justify-content: end !important;
   }
 }
 
@@ -633,6 +647,9 @@ footer a:hover {
   #timer {
     font-size: 14px;
   }
+  .navbar-toggler{
+    justify-content: end !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -645,6 +662,9 @@ footer a:hover {
   .card {
     width: 100px;
     height: 70px; 
+  }
+  .navbar-toggler{
+    justify-content: end !important;
   }
 }
 @media (max-width: 768px) {
@@ -664,4 +684,146 @@ footer a:hover {
     font-size: 1rem;      
     margin: 0;             
   }
+  .navbar-toggler{
+    justify-content: end !important;
+  }
+}
+.text_video h1{
+  margin-left: 35px;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* General Animations */
+.section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content {
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.hero-image img {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.arabic-flags-section {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.arabic-flags-section h2,
+.arabic-flags-section p {
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+.arabic-flags-section .flags-grid img {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.video-section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+  animation: rotateIn 1.5s ease-in-out;
+}
+
+.flags_text img {
+  animation: zoomIn 2s ease-in-out;
+}
+
+.flags_text p {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+/* Animation Delay for a Staggered Effect */
+.hero-content h1,
+.hero-content p,
+.hero-content .btn {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.arabic-flags-section h2,
+.arabic-flags-section p {
+  animation-delay: 0.3s;
+}
+
+.arabic-flags-section .flags-grid img {
+  animation-delay: 0.5s;
+}
+
+.text_video h1 {
+  animation: zoomIn 2s ease-in-out;
+}
+
+.text_video p {
+  animation: slideInRight 2s ease-in-out;
+}
+
+footer {
+  animation: fadeIn 2s ease-in-out;
 }
